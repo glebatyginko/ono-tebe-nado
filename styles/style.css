@@ -1,1 +1,82 @@
-/* место для вашего кода */
+/* Шапка */
+
+.header {
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 92px 49px 92px 51px;
+}
+
+/* Навигация */
+
+.header__menu {
+  padding: 0;
+  margin: 43px 0 45px 0;
+}
+
+.header__links-list {
+  display: flex;
+  gap: 32px;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 21px;
+  color: #000000;
+  
+}
+
+.header__links-list-item {
+  list-style: circle;
+}
+
+.header__links-list-item_no-bullit {
+  list-style-type: none;
+}
+
+.header__link {
+  text-underline-offset: 5px;
+  text-decoration-thickness: 1px;
+}
+
+.header__link_active {
+  text-decoration: none;
+}
+
+/* Логотип */
+
+.header__logo {
+  display: block;
+  margin: auto;
+}
+
+.header__logo-image {
+  width: 148px;
+  height: 105px;  
+}
+
+/* Адрес */
+
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-self: end;
+  font-family: Raleway;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 24px;
+  text-align: left;
+  color: #000000;
+}
+
+/* Входная секция */
+
+.cover {
+  position: relative;
+  max-width: 1440px;
+  box-sizing: border-box;
+  background-image: url(/images/cover.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
