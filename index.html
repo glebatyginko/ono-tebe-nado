@@ -51,7 +51,7 @@
     </header>
 
     <!-- Входная секция -->
-    
+
     <main>
       <section class="cover">
         <div class="overlay"></div>
@@ -79,26 +79,41 @@
       <!-- Секция с карточками -->
       
       <section class="lots">
-        <h2>Лоты</h2>
-        <ul>
-          <li>
-            <a>
-              <article></article>
+        <h2 class="lots__heading">Лоты</h2>
+        <ul class="lots__card-list">
+          <li class="lots__card-list-item">
+            <a class="card-link">
+              <article class="card card_type_film">
+                <div class="overlay"></div>
+                <h3 class="card__title"></h3>
+                <p class="card__text"></p>
+              </article>
             </a>
           </li>
-          <li>
-            <a>
-              <article></article>
+          <li class="lots__card-list-item">
+            <a class="card-link">
+              <article class="card card_type_book">
+                <div class="overlay"></div>
+                <h3 class="card__title"></h3>
+                <p class="card__text"></p>
+              </article>
             </a>
           </li>
-          <li>
-            <a>
-              <article></article>
+          <li class="lots__card-list-item">
+            <a class="card-link">
+              <article class="card card_type_picture">
+                <div class="overlay"></div>
+                <h3 class="card__title"></h3>
+                <p class="card__text"></p>
+              </article>
             </a>
           </li>
         </ul>
-        <p>посмотреть больше</p>
+        <a class="lots__look-more-link" href="#0">посмотреть больше</a>
       </section>
+
+      <!-- Секция о аукционе -->
+
       <section class="about"></section>
     </main>
     <footer class="footer"></footer>
