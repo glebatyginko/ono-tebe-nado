@@ -70,7 +70,12 @@
   color: #000000;
 }
 
+.address__text {
+  white-space: nowrap;
+}
+
 .header__address-link {
+  text-decoration-thickness: 1px;
   text-underline-offset: 4px;
 }
 
@@ -290,7 +295,7 @@
   column-gap: 25px;
   max-width: 1440px;
   padding: 0 50px;
-  margin-bottom: 180px;
+  margin-bottom: 183px;
 }
 
 .about__column {
@@ -339,9 +344,67 @@
   margin-top: 29px; 
 }
 
-/*  */
+/* Подвал */
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 356px;
+  max-width: 1440px;
+  padding: 0 50px 90px;
+}
+
+.footer__menu {
+  display: flex;
+  flex-direction: column;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
+  list-style-type: none;
+}
+
+.footer__menu-list {
+  list-style: none;
+}
+
+/* .footer__menu-list-item {} не нашел применения */
+
+.footer__menu-link {
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
+.footer__social-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 48px;
+  list-style: none;
+  max-width: 240px;
+}
+
+/* .footer__social-link подчеркивания итак не было.
+насчет блочной ссылки засомневался, оставил так*/
+
+.footer__social-icon {
+  height: 48px; 
+  width: auto;
+}
+
+/* я долго мучился с адресом, т.к. перенос в футере осуществлялся совершенно в другом месте по сравнению с хедером. Принял решение переделать полностью блок .address так как и написано было в рекомендациях... это провал :))
+
+пишу это для того, чтобы не возникло лишних подозрений, т.к. я коммитил и разница сразу будет видна в итоговом варианте проекта
+*/
 
 
+
+/* решил проблему за счет добавления класса абзацу в блоке адрес `class="address__text"` */
 
 
 
